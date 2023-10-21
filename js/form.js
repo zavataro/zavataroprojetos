@@ -31,6 +31,7 @@
         dataType: "json",
         encode: true,
       }).done(function (data) {
+        console.log(data);
         if (!data.success) {
             if (data.errors.name) {
               $("#help-name").addClass("has-error");
@@ -61,6 +62,8 @@
             }
 
           } else {
+
+            console.log("passei aqui")
               
               var id = "#janela1";
           

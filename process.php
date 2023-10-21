@@ -24,21 +24,17 @@ if (!empty($errors)) {
     $data['errors'] = $errors;
 } else {
 
-    ini_set( 'display_errors', 1 );
-    error_reporting( E_ALL );
-    $from = "contato@zavataroprojetos.com";
-    $to = "gabriela@zavataroprojetos.com.br";
-    $subject = "Mensagem Enviada pelo Site";
-    $message = "Nome: " . $_POST['name'] . " <br /> ".
-               "Email: " . $_POST['email'] . "<br /> ".
-               "Assunto: " . $_POST['subject'] . "<br /> ".
-               "Mensagem: " . $_POST['message'];
-    $headers = "From:" . $from;
-    mail($to,$subject,$message, $headers);
-    echo "The email message was sent.";
-
-    $data['success'] = true;
+    $data['success'] =  true;
     $data['message'] = 'Mensagem enviada com sucesso!';
+
+    $from = $_POST['name'] . "<" . $_POST['email'] . ">";
+    $to = "contato@zavataroprojetos.com";
+    $subject = $_POST['subject'];
+    $message =  $_POST['message'];
+    $headers = "From:" . $from;
+    envio = mail($to,$subject,$message, $headers);
+    
 }
 
 echo json_encode($data);
+?>
