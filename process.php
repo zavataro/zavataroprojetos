@@ -29,9 +29,9 @@ if (!empty($errors)) {
     $from = "contato@zavataroprojetos.com";
     $to = "gabriela@zavataroprojetos.com.br";
     $subject = "Mensagem Enviada pelo Site";
-    $message = "Nome: " . $_POST['name'] <br /> .
-               "Email: " . $_POST['email'] <br /> .
-               "Assunto: " . $_POST['subject'] <br /> .
+    $message = "Nome: " . $_POST['name'] . " <br /> ".
+               "Email: " . $_POST['email'] . "<br /> ".
+               "Assunto: " . $_POST['subject'] . "<br /> ".
                "Mensagem: " . $_POST['message'];
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
