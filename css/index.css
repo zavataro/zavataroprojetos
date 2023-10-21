@@ -7,6 +7,31 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+
+.window{
+    display:none;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+  
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+  
+.fechar{display:block; text-align:right;}
+
 *{
     padding: 0%;
     margin: 0%;
@@ -1094,7 +1119,6 @@ padding-bottom: 40px;
     pointer-events: none;
 }
 .contact-form{
-    height: 550px;
     padding-right:40px;
     width: 60%;
     display: flex;
@@ -1117,7 +1141,7 @@ form{
     justify-content: center;
 }
 .input-name{
-    width: 40%;
+    width: 84%;
     padding:10px 20px;
     margin:14px;
     border-radius: 8px;
@@ -1127,6 +1151,14 @@ form{
     color: whitesmoke;
     font-family: poppins;
     font-size: 18px;
+}
+.has-error{
+    width: 84%;
+    padding:0px;
+    color: rgb(248, 102, 102);
+    font-family: poppins;
+    font-size: 10px;
+    text-align: left;
 }
 .form-header{
     font-size: 24px;
@@ -1714,6 +1746,14 @@ For devices with smaller width like mobile phone
                 font-family: poppins;
                 font-size: 16px;
             }
+            .has-error{
+                width: 90%;
+                padding:0px;
+                color: rgb(248, 102, 102);
+                font-family: poppins;
+                font-size: 10px;
+                text-align: left;
+            }
             .form-header{
                 font-size: 22px;
                 font-family: poppins;
@@ -2182,9 +2222,17 @@ for tabs and large phones
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: rgb(248, 102, 102);
                 font-family: poppins;
                 font-size: 16px;
+            }
+            .has-error{
+                width: 80%;
+                padding:0px;
+                color: rgb(248, 102, 102);
+                font-family: poppins;
+                font-size: 10px;
+                text-align: left;
             }
             .form-header{
                 font-size: 22px;
@@ -2260,13 +2308,6 @@ for tabs and large phones
             
             
 }
-
-
-
-
-
-
-
 
 @media all and (max-width: 9000px) and (min-width: 1441px){
 
@@ -2511,6 +2552,14 @@ for tabs and large phones
         color: whitesmoke;
         font-family: poppins;
         font-size: 18px;
+    }
+    .has-error{
+        width: 60%;
+                padding:0px;
+                color: rgb(248, 102, 102);
+                font-family: poppins;
+                font-size: 10px;
+                text-align: left;
     }
     .form-header{
         font-size: 24px;

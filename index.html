@@ -496,105 +496,117 @@
         </div>
         <!--blog end-->
         <!--contact-->
-     <div id="contact">
-        <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
-            </div>
-            <div class="color-selector">
-                <div class="heading">Customize</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
+        <div id="contact">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
                 </div>
-            </div>
-        </div>
-        <div class="contact-header">Meus <span class="color"> Contatos</span>
-        <!--<div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>-->
-        <div class="contact-content">
-            <!--Contact form-->
-             <div class="contact-form">
-                 <div class="form-header">
-                     Envie uma mensagem
-                 </div>
-                 <form id="myForm" action="process.php" method="post">
-                    <div class="input-line">
-                        <input id="name" name="name" type="text" placeholder="Nome" class="input-name">
-                        <input id="email" name="email" type="email" placeholder="Email"  class="input-name">
+                <div class="color-selector">
+                    <div class="heading">Customize</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
                     </div>
-                    <input type="text" id="subject" name="subject" placeholder="Assunto" class="input-subject">
-                    <textarea id ="body" name="body" class="input-textarea" placeholder="Mensagem"></textarea>
-                    <button type="submit" id ="submit" value="send">Enviar</button>
-                 </form>       
-             </div>
-            <!--Contact form-->
-            <!--Contact information-->
-             <div class="contact-info">
-                <div class="contact-info-header">
-                    Informações de contato
                 </div>
-                <div class="contact-info-content">
-                <div class="contect-info-content-line">
-                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
-                    <div class="contact-info-icon-text">
-                        <h6>Nome</h6>
-                        <p>Gabriela Zavataro</p>
-                  </div>
-                </div>
-                <div class="contect-info-content-line">
-                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Local</h6>
-                      <p>São Paulo,SP</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                  <a href="https://wa.me/message/K5PME76RDMPMH1" target="_blank">
-                    <img src="./images/whatsApp.png" class="icon" alt="phone-icon">
-                  </a>
-                  <div class="contact-info-icon-text">
-                      <h6>whatsApp</h6>
-                      <p>+11 91619-0481</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                <a href="mailto:contato@zavataroprojetos.com.br" target="_blank"><img src="./images/mail.png" class="icon" alt="email-icon"></a>
-                  <div class="contact-info-icon-text">
-                      <h6>Email</h6>
-                      <p>contato@zavataroprojetos.com.br</p>
-                </div>
-              </div>
-                </div>
-            <!--Contact information end-->
-           </div>
-        </div>
-        <!--copyright-section You Can Remove After Downloading-->
-        <div class="footer">
-            <div class="footer-text">
-                <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Gabriela Zavataro
             </div>
+            <div class="contact-header">Meus <span class="color"> Contatos</span>
+                <!--<div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div>-->
+            </div>
+            <div class="contact-content">
+                <!--Contact form-->
+                <div class="contact-form">
+                    <div class="form-header">
+                        Envie uma mensagem
+                    </div>
+                    <form id="myForm" action="process.php" method="post">
+                        <input id="name" name="name" type="text" placeholder="Nome" class="input-name">
+                        <span id="help-name"></span>
+                        <input id="email" name="email" type="email" placeholder="Email"  class="input-name">
+                        <span id="help-email"></span>
+                        <input type="text" id="subject" name="subject" placeholder="Assunto" class="input-subject">
+                        <span id="help-subject"></span>
+                        <textarea id ="message" name="message" class="input-textarea" placeholder="Mensagem"></textarea>
+                        <span id="help-message"></span>
+                        <button type="submit" id ="submit" value="send">Enviar</button>
+                    </form>       
+                </div>
+                <div class="window" id="janela1">
+                    <a href="#" class="fechar">X</a>
+                    <h4>MENSAGEM ENVIADA COM SUCESSO!</h4>
+                    <p>Agradecemos seu contato. Em breve retornaremos.</p>
+                </div>
+                <!-- mascara para cobrir o site --> 
+                <div id="mascara"></div>
+                <!--Contact form-->
+                <!--Contact information-->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        Informações de contato
+                    </div>
+                    <div class="contact-info-content">
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Nome</h6>
+                                <p>Gabriela Zavataro</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Local</h6>
+                                <p>São Paulo,SP</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <a href="https://wa.me/message/K5PME76RDMPMH1" target="_blank">
+                                <img src="./images/whatsApp.png" class="icon" alt="phone-icon">
+                            </a>
+                            <div class="contact-info-icon-text">
+                                <h6>whatsApp</h6>
+                                <p>+11 91619-0481</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <a href="mailto:contato@zavataroprojetos.com.br" target="_blank">
+                                <img src="./images/mail.png" class="icon" alt="email-icon">
+                            </a>
+                            <div class="contact-info-icon-text">
+                                <h6>Email</h6>
+                                <p>contato@zavataroprojetos.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Contact information end-->
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Gabriela Zavataro
+                </div>
+            </div>
+            <!--copyright-section-->
         </div>
-        <!--copyright-section-->
-    </div>
-    <!--contact end-->
+        <!--contact end-->
     </div>
     <!--all the divisions-->
     <script src="js/jquery.min.js"></script>
