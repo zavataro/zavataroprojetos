@@ -24,15 +24,19 @@ if (!empty($errors)) {
     $data['errors'] = $errors;
 } else {
 
-    $data['success'] =  true;
-    $data['message'] = 'Mensagem enviada com sucesso!';
-
-    $from = $_POST['name'] . "<" . $_POST['email'] . ">";
-    $to = "contato@zavataroprojetos.com";
+    $from = $_POST['name'] . " <" . $_POST['email'] . ">";
+    $to = "contato@zavataroprojetos.com.br";
     $subject = $_POST['subject'];
     $message =  $_POST['message'];
     $headers = "From:" . $from;
-    envio = mail($to,$subject,$message, $headers);
+
+    if ( mail($to,$subject,$message, $headers)) {
+        $data['success'] =  true;
+        $data['message'] = 'Mensagem enviada com sucesso!';
+    } else {
+        $data['success'] = false;
+        $data['errors'] = "Falha no envio da mensagem!";
+    }
     
 }
 

@@ -62,9 +62,6 @@
             }
 
           } else {
-
-            console.log("passei aqui")
-              
               var id = "#janela1";
           
               var alturaTela = $(document).height();
@@ -79,7 +76,12 @@
               var top = ($(window).height() / 2) - ( $(id).height() / 2 );
             
               $(id).css({'top':top,'left':left});
-              $(id).show();   
+              $(id).show();
+
+              $(".help-name-text").remove();
+              $(".help-email-text").remove();
+              $(".help-subject-text").remove();
+              $(".help-message-text").remove();
   
               $("#mascara").click( function(){
                   $(this).hide();
